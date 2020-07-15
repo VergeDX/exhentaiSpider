@@ -133,3 +133,6 @@ config.toml
 
 # IDEA
 .idea/
+
+# jpg file
+*.jpg
