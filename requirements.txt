@@ -2,4 +2,3 @@ toml
 requests
 bs4
 pysocks
-urllib3
