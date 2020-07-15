@@ -2,3 +2,4 @@ toml
 requests
 bs4
 pysocks
+SQLAlchemy
