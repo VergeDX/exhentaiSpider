@@ -12,15 +12,15 @@ if __name__ == '__main__':
             'https': '127.0.0.1:8118',
         }
 
-        for index in range(54):
-            print('page' + str(index) + '... ')
+        for index in range(34):
+            print('page' + str(index + 1) + '... ')
 
             session = requests.Session()
             session.headers.update({
                 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                              'Chrome/83.0.4103.116 Safari/537.36'})
+                              'Chrome/84.0.4147.89 Safari/537.36'})
 
-            r = session.get('https://exhentai.org/?page=' + str(index) + '&f_search=uploader:BlossomPlus',
+            r = session.get('https://exhentai.org/uploader/BlossomPlus/' + str(index),
                             proxies=proxies, cookies=config_toml)
             soup = BeautifulSoup(r.text, 'html.parser')
 
